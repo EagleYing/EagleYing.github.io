@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tag2 on EagleYing&#39;s Blog</title>
-    <link>/tags/tag2/</link>
-    <description>Recent content in tag2 on EagleYing&#39;s Blog</description>
+    <title>Abouts on EagleYing&#39;s Blog</title>
+    <link>/about/</link>
+    <description>Recent content in Abouts on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2020 08:59:03 +0800</lastBuildDate><atom:link href="/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2020 08:59:03 +0800</lastBuildDate><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
       <link>/about/aboutme/</link>

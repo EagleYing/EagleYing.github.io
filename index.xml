@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>EagleYing&#39;s Blog</title>
+    <link>/</link>
+    <description>Recent content on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2020 08:59:03 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>/about/aboutme/</link>
+      <pubDate>Wed, 30 Sep 2020 08:59:03 +0800</pubDate>
+      
+      <guid>/about/aboutme/</guid>
+      <description>About me!</description>
+    </item>
+    
     <item>
       <title>Hello Hugo</title>
-      <link>http://example.org/post/hello/</link>
+      <link>/post/hello/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/post/hello/</guid>
-      <description>This is my first post.</description>
+      <guid>/post/hello/</guid>
+      <description>系统要求</description>
     </item>
     
   </channel>
