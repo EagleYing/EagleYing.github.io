@@ -6,14 +6,50 @@
     <description>Recent content in Tech on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Sep 2020 08:59:03 +0800</lastBuildDate><atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello Hugo</title>
+      <title>Hugo &amp; GitHub Pages Blog搭建 PART 1</title>
       <link>/post/hello/</link>
-      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Sep 2020 08:59:03 +0800</pubDate>
       
       <guid>/post/hello/</guid>
-      <description>系统要求</description>
+      <description>系统 本机：MacOS Catania 10.15.6，以及已经安装Git； 服务器：Ubuntu 16.04.6 安装Hugo MacOS 安装 Homebrew % /bin/bash -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;quot; 官网详情：Homebrew 安</description>
+    </item>
+    
+    <item>
+      <title>Hugo &amp; Github Pages Blog搭建 PART2</title>
+      <link>/post/hugoblogpart2/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/hugoblogpart2/</guid>
+      <description>新建文章 在 Blog 文件夹下： hugo new post/hello.md 这时候你的 content 文件夹下会多一个名叫 post 的文件夹，里面有你的 Markdown 文件： vim content/post/hello.md 输入你的内容，比如 Hello world!, 然后 Hugo server -w 就能预览到你的</description>
+    </item>
+    
+    <item>
+      <title>Nginx(子)于域名设置HTTPS</title>
+      <link>/post/nginx_domain/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/nginx_domain/</guid>
+      <description>服务器端口配置 如果是子域名，需要在服务器的出方向和入方向都开放对应的端口，主域名入方向 80 端口就可以。 安装Certbot 安装过程参照Certb</description>
+    </item>
+    
+    <item>
+      <title>Python Bottle 配置 HTTPS</title>
+      <link>/post/python_bottle_https/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/python_bottle_https/</guid>
+      <description>python的bottle只提供了http的协议，对于需要htpps的情况，需要通过cherrypy等进行转换，转换代码： # copied from bottle. Only changes are to import</description>
+    </item>
+    
+    <item>
+      <title>微信小程序微信支付</title>
+      <link>/post/wxpay/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/wxpay/</guid>
+      <description>有关微信小程序中的微信支付实现采坑</description>
     </item>
     
   </channel>

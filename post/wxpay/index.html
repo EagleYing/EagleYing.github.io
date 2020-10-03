@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Hugo &amp; GitHub Pages Blog搭建 PART 1" />
-    <meta property="og:title" content="Hugo &amp; GitHub Pages Blog搭建 PART 1" />
-    <meta property="twitter:title" content="Hugo &amp; GitHub Pages Blog搭建 PART 1" />
+    <meta name="title" content="微信小程序微信支付" />
+    <meta property="og:title" content="微信小程序微信支付" />
+    <meta property="twitter:title" content="微信小程序微信支付" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Hugo &amp; GitHub Pages Blog搭建 PART 1-周周的博客 | EagleYing&#39;s Blog</title>
+    <title>微信小程序微信支付-周周的博客 | EagleYing&#39;s Blog</title>
 
-    <link rel="canonical" href="/post/hello/">
+    <link rel="canonical" href="/post/wxpay/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 	
@@ -163,30 +163,26 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/hugo" title="Hugo">
-                            Hugo
+                        <a class="tag" href="/tags/tag1" title="tag1">
+                            tag1
                         </a>
                         
-                        <a class="tag" href="/tags/github-pages" title="GitHub Pages">
-                            GitHub Pages
-                        </a>
-                        
-                        <a class="tag" href="/tags/blog" title="Blog">
-                            Blog
+                        <a class="tag" href="/tags/tag2" title="tag2">
+                            tag2
                         </a>
                         
                     </div>
-                    <h1>Hugo &amp; GitHub Pages Blog搭建 PART 1</h1>
-                    <h2 class="subheading">基础配置</h2>
+                    <h1>微信小程序微信支付</h1>
+                    <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
                         
-                                 &#34;EagleYing&#34;
+                                 &#34;&#34;
                          
                         on 
-                        Wednesday, September 30, 2020
+                        Monday, June 4, 2018
                         
-                            <span id="/post/hello/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                            <span id="/post/wxpay/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -343,77 +339,7 @@ $(function() {
                 post-container">
 
                 
-                <h2 id="系统">系统</h2>
-<p>本机：MacOS Catania 10.15.6，以及已经安装Git；</p>
-<p>服务器：Ubuntu 16.04.6</p>
-<h2 id="安装hugo">安装Hugo</h2>
-<h3 id="macos-安装-homebrew">MacOS 安装 Homebrew</h3>
-<pre><code>% /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
-</code></pre><p>官网详情：<a href="https://brew.sh/">Homebrew</a></p>
-<h3 id="安装hugo-1">安装Hugo</h3>
-<pre><code>% brew install hugo
-</code></pre><p>其他安装方法见官网：<a href="https://gohugo.io/">Hugo</a></p>
-<p>查看 Hugo 版本（顺便检查是否安装成功）</p>
-<pre><code>% hugo version
-Hugo Static Site Generator v0.75.1/extended darwin/amd64 BuildDate: unknown
-</code></pre><h2 id="github-初始化">GitHub 初始化</h2>
-<p>需要两个仓库：</p>
-<table>
-<thead>
-<tr>
-<th>Repository</th>
-<th>Attribute</th>
-<th>Usage</th>
-<th>README.txt</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Username.github.io</td>
-<td>Public</td>
-<td>Github Pages, xxx.xml, xxx.html</td>
-<td>可以放</td>
-</tr>
-<tr>
-<td>Your blog repository</td>
-<td>Private</td>
-<td>xxx.md</td>
-<td>不要放！！！</td>
-</tr>
-</tbody>
-</table>
-<p>Github Pages可以参考这里 <a href="https://pages.github.com/">Github Pages</a>，是可以设置为私有的但是感觉反正内容都公开可见也没有必要😂，Username 是你的GitHub名；第二个比如 MyHugoBlog 主要用来放你的 markdown 文件。<strong>注意第二个仓库不要初始化README.txt</strong></p>
-<h2 id="新建页面">新建页面</h2>
-<p>进入你的文件夹，新建一个 Hugo site：</p>
-<pre><code>hugo new site Blog
-</code></pre><p>这时候你的文件夹下会多一个名叫 Blog 的文件夹，里面文件的目录如下：</p>
-<pre><code>-- Blog
-|-- archetypes
-|-- data
-|-- resources
-|-- config.toml
-|-- layouts
-|-- static
-|-- content
-|-- themes
-</code></pre><h3 id="git-init">git init</h3>
-<p>在 Blog 文件夹下：</p>
-<pre><code>git init
-git remote add origin 你的blog仓库链接
-</code></pre><p>在这里需要编辑 <code>.gitignore</code> 文件夹，忽略 <code>public</code> 文件夹：</p>
-<pre><code>vim .gitignore
-</code></pre><p><code>.gitignore</code> 文件内容为：</p>
-<pre><code>public/
-</code></pre><p>然后常规 git 操作：</p>
-<pre><code>git add .
-git commit -m &quot;ignore public&quot;
-git push origin master
-</code></pre><h3 id="自选主题">自选主题</h3>
-<p>可以去 <a href="https://themes.gohugo.io/">Hogo主题网站</a> <code>git clone</code> 你喜欢的主题到theme文件夹下:</p>
-<pre><code>git clone 你喜欢的主题git链接 theme/主题名
-</code></pre><p>进入你的主题文件夹，复制文件夹下的 config.toml 文件内容到你自己的 config.toml文件中，这个时候就可以在本机运行查看自己的博客界面了：</p>
-<pre><code>hugo server -w
-</code></pre><p>接下来的步骤请看 PART 2</p>
+                <p>有关微信小程序中的微信支付实现采坑</p>
 
 
                 
@@ -461,11 +387,11 @@ git push origin master
                 <hr>
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/post/hugoblogpart2/" data-toggle="tooltip" data-placement="top" title="Hugo &amp; Github Pages Blog搭建 PART2">&larr;
-                            Previous Post</a>
-                    </li>
                     
+                    <li class="next">
+                        <a href="/post/python_bottle_https/" data-toggle="tooltip" data-placement="top" title="Python Bottle 配置 HTTPS">Next
+                            Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
