@@ -384,9 +384,21 @@ git push origin master
 </tbody>
 </table>
 <p>等待一段时间后生效，浏览器输入你的域名就可访问你的博客。</p>
-<h2 id="个性化主题">个性化主题</h2>
-<p>接下来你就可以不断添加文章，同时也可以在基础主题的背景下自定义背景图、友情链接等，详细可以去看自己喜欢主题下的 example site 和 config，注意在 <code>Blog</code> 下的 <code>config.tmol</code> 文件下的 <code>aseURL</code> 要改为自己的 <code>username.github.io</code>:</p>
-<pre><code>aseURL = &quot;http://username.github.io/&quot;
+<p>注意，以上步骤会在仓库下新增一个 <code>CNAME</code> 文件，所以在下一次 <code>push</code> 的时候别忘了先 <code>pull</code>~</p>
+<h2 id="更新">更新</h2>
+<p>当编辑完所有更改之后需要同步到 GitHub，具体步骤如下：</p>
+<pre><code># 先在 Blog 目录下 push
+git add .
+git commit -m &quot;...&quot;
+git push origin master
+# 然后更新静态页面
+hugo -d ../username.github.io/
+# 进入到 username.github.io 目录下
+cd ../username/github.io
+git add .
+git commit -m &quot;...&quot;
+# 如果配置了域名别忘了先 git pull
+git push origin master
 </code></pre>
 
                 

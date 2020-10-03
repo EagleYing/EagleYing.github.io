@@ -408,12 +408,15 @@ git remote add origin 你的blog仓库链接
 <pre><code>git add .
 git commit -m &quot;ignore public&quot;
 git push origin master
-</code></pre><h3 id="自选主题">自选主题</h3>
+</code></pre><h2 id="自选主题">自选主题</h2>
 <p>可以去 <a href="https://themes.gohugo.io/">Hogo主题网站</a> <code>git clone</code> 你喜欢的主题到theme文件夹下:</p>
 <pre><code>git clone 你喜欢的主题git链接 theme/主题名
 </code></pre><p>进入你的主题文件夹，复制文件夹下的 config.toml 文件内容到你自己的 config.toml文件中，这个时候就可以在本机运行查看自己的博客界面了：</p>
 <pre><code>hugo server -w
-</code></pre><p>接下来的步骤请看 PART 2</p>
+</code></pre><h3 id="编辑主题">编辑主题</h3>
+<p>可以在基础主题的背景下自定义背景图、友情链接等，详细可以去看自己喜欢主题下的 example site 和 config，注意在 <code>Blog</code> 下的 <code>config.tmol</code> 文件下的 <code>aseURL</code> 要改为自己的 <code>username.github.io</code>:</p>
+<pre><code>aseURL = &quot;http://username.github.io/&quot;
+</code></pre><p>接下来的步骤请看  <a href="https://blog.yingeagle.com/post/hugoblogpart2/">PART 2</a></p>
 
 
                 
