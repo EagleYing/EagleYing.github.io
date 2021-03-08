@@ -6,22 +6,22 @@
     <description>Recent content in Categories on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2020 13:04:41 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Mar 2021 09:37:00 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tech</title>
+      <link>/categories/tech/</link>
+      <pubDate>Mon, 08 Mar 2021 09:37:00 +0800</pubDate>
+      
+      <guid>/categories/tech/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>photography</title>
       <link>/categories/photography/</link>
       <pubDate>Sat, 03 Oct 2020 13:04:41 +0800</pubDate>
       
       <guid>/categories/photography/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>/categories/tech/</link>
-      <pubDate>Wed, 30 Sep 2020 08:59:03 +0800</pubDate>
-      
-      <guid>/categories/tech/</guid>
       <description></description>
     </item>
     

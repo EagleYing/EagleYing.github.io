@@ -6,7 +6,16 @@
     <description>Recent content in Tech on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2020 08:59:03 +0800</lastBuildDate><atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Mar 2021 09:37:00 +0800</lastBuildDate><atom:link href="/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOS_Terminal_Style</title>
+      <link>/post/macos_terminal_style/</link>
+      <pubDate>Mon, 08 Mar 2021 09:37:00 +0800</pubDate>
+      
+      <guid>/post/macos_terminal_style/</guid>
+      <description>傻瓜式修改基础风格 在终端的系统偏好设置里能够快速编辑大体风格，我的修改如下： 新建.bash_profile MacOS终端默认黑白比较单调，想</description>
+    </item>
+    
     <item>
       <title>Hugo &amp; GitHub Pages Blog搭建 PART 1</title>
       <link>/post/hello/</link>

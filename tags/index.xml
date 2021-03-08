@@ -6,7 +6,34 @@
     <description>Recent content in Tags on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2020 08:59:03 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Mar 2021 09:37:00 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BigSur</title>
+      <link>/tags/bigsur/</link>
+      <pubDate>Mon, 08 Mar 2021 09:37:00 +0800</pubDate>
+      
+      <guid>/tags/bigsur/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MacOS</title>
+      <link>/tags/macos/</link>
+      <pubDate>Mon, 08 Mar 2021 09:37:00 +0800</pubDate>
+      
+      <guid>/tags/macos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ZSH</title>
+      <link>/tags/zsh/</link>
+      <pubDate>Mon, 08 Mar 2021 09:37:00 +0800</pubDate>
+      
+      <guid>/tags/zsh/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Blog</title>
       <link>/tags/blog/</link>
