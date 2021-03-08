@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on EagleYing&#39;s Blog</title>
-    <link>/categories/</link>
+    <link>http://EagleYing.github.io/categories/</link>
     <description>Recent content in Categories on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Mar 2021 09:37:00 +0800</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://EagleYing.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tech</title>
-      <link>/categories/tech/</link>
-      <pubDate>Mon, 08 Mar 2021 09:37:00 +0800</pubDate>
+      <link>http://EagleYing.github.io/categories/tech/</link>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>/categories/tech/</guid>
+      <guid>http://EagleYing.github.io/categories/tech/</guid>
       <description></description>
     </item>
     
     <item>
       <title>photography</title>
-      <link>/categories/photography/</link>
+      <link>http://EagleYing.github.io/categories/photography/</link>
       <pubDate>Sat, 03 Oct 2020 13:04:41 +0800</pubDate>
       
-      <guid>/categories/photography/</guid>
+      <guid>http://EagleYing.github.io/categories/photography/</guid>
       <description></description>
     </item>
     

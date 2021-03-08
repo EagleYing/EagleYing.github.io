@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="Butterfly" />
-    <meta property="og:title" content="Butterfly" />
-    <meta property="twitter:title" content="Butterfly" />
+    <meta name="title" content="MacOS配置Terminal风格" />
+    <meta property="og:title" content="MacOS配置Terminal风格" />
+    <meta property="twitter:title" content="MacOS配置Terminal风格" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Butterfly-周周的博客 | EagleYing&#39;s Blog</title>
+    <title>MacOS配置Terminal风格-周周的博客 | EagleYing&#39;s Blog</title>
 
-    <link rel="canonical" href="/post/butterfly/">
+    <link rel="canonical" href="/post/macos_terminal_style/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
@@ -167,8 +167,20 @@
                 <div class="post-heading">
                     <div class="tags">
                         
+                        <a class="tag" href="/tags/bigsur" title="BigSur">
+                            BigSur
+                        </a>
+                        
+                        <a class="tag" href="/tags/macos" title="MacOS">
+                            MacOS
+                        </a>
+                        
+                        <a class="tag" href="/tags/zsh" title="ZSH">
+                            ZSH
+                        </a>
+                        
                     </div>
-                    <h1>Butterfly</h1>
+                    <h1>MacOS配置Terminal风格</h1>
                     <h2 class="subheading"></h2>
                     <span class="meta">
                         Posted by 
@@ -176,9 +188,9 @@
                                 EagleYing&#39;s Blog
                          
                         on 
-                        Saturday, October 3, 2020
+                        Monday, March 8, 2021
                         
-                            <span id="/post/butterfly/" class="leancloud_visitors meta_data_item" data-flag-title="">
+                            <span id="/post/macos_terminal_style/" class="leancloud_visitors meta_data_item" data-flag-title="">
     <span class="post-meta-item-icon">
       <span class="octicon octicon-eye"></span> 
     </span>
@@ -335,18 +347,25 @@ $(function() {
                 post-container">
 
                 
-                <h3 id="long-tailed-bluelampides-boeticus亮灰蝶">long-tailed blue(Lampides boeticus)亮灰蝶</h3>
-<p>亮灰蝶又名曲纹灰蝶、曲斑灰蝶、长尾里波灰蝶、波纹小灰蝶，十分常见。</p>
-<p>
-  <img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/120514716_386422159054022_4491702556879221184_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;_nc_cat=102&amp;_nc_ohc=LVssYa78A1MAX9j4myG&amp;_nc_tp=15&amp;oh=f847b85e229ce800fdf9c9ae644af40b&amp;oe=5FA1D362" alt="亮灰蝶">
-
-</p>
-<h3 id="junonia-almana-linnaeus-美眼蛱蝶">Junonia almana (linnaeus) 美眼蛱蝶</h3>
-<p>猫眼蛱蝶、孔雀眼蛱、蝶猫眼蝶、蓑衣蝶，除西北外，全国各地均有分布，国外分布于日本及东南亚。</p>
-<p>
-  <img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/120515936_389353292204929_8788708973791399622_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&amp;_nc_cat=101&amp;_nc_ohc=t5banUejsUQAX8rFemF&amp;_nc_tp=15&amp;oh=8afab2261dd87d57f6227ccb77c2fe1c&amp;oe=5FA12DB1" alt="">
-
-</p>
+                <h3 id="傻瓜式修改基础风格">傻瓜式修改基础风格</h3>
+<p>在终端的<code>系统偏好</code>设置里能够快速编辑大体风格，我的修改如下：</p>
+<h4 id="img-srcuserseagleyinglibraryapplication-supporttypora-user-imagesimage-20210308095311241png-altimage-20210308095311241-stylezoom50-"><!-- raw HTML omitted --></h4>
+<h3 id="新建bash_profile">新建.bash_profile</h3>
+<p>MacOS终端默认黑白比较单调，想要和服务器上配置<code>Oh-my-zsh之</code>后的风格类似，首先<code>cd ~</code>到用户根目录，新建<code>.bash_profile</code>配置文件：</p>
+<pre><code>vim .bach_profile
+</code></pre><p>添加以下内容：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#ff79c6">export</span> CLICOLOR<span style="color:#ff79c6">=</span>&#39;Yes&#39;                                                       
+<span style="color:#ff79c6">export</span> LSCOLORS<span style="color:#ff79c6">=</span>&#39;ExGxFxdaCxDaDahbadacec&#39;
+<span style="color:#ff79c6">export</span> LS_OPTIONS<span style="color:#ff79c6">=</span>&#39;<span style="color:#ff79c6">--</span>color<span style="color:#ff79c6">=</span><span style="color:#ff79c6">auto</span>&#39;
+<span style="color:#ff79c6">export</span> PS1<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;%12F#%f %K{yellow}%F{black}%n%f%k %7F@%f %10F%m%f in %11F%1~%f [    %*]</span>
+<span style="color:#ff79c6">%</span><span style="color:#bd93f9">1F</span>$ <span style="color:#ff79c6">%</span><span style="color:#bd93f9">7F</span><span style="color:#f1fa8c">&#34;</span>
+</code></pre></div><p>附有关<code>.zshrc PS1</code> <a href="http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Visual-effects">参数的内容</a></p>
+<h3 id="修改zshrc">修改.zshrc</h3>
+<p><code>ls -a</code>显示.zshrc文件，<code>vim .zshrc</code>在文件最后添加<code>source ~/.bash_profile</code></p>
+<h3 id="重新打开终端">重新打开终端</h3>
+<p>最终结果如下：</p>
+<p><!-- raw HTML omitted --></p>
+<p>Have fun(<em>^▽^</em>)！</p>
 
 
                 
@@ -395,15 +414,10 @@ $(function() {
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/post/hello/" data-toggle="tooltip" data-placement="top" title="Hugo &amp; GitHub Pages Blog搭建 PART 1">&larr;
+                        <a href="/post/butterfly/" data-toggle="tooltip" data-placement="top" title="Butterfly">&larr;
                             Previous Post</a>
                     </li>
                     
-                    
-                    <li class="next">
-                        <a href="/post/macos_terminal_style/" data-toggle="tooltip" data-placement="top" title="MacOS配置Terminal风格">Next
-                            Post &rarr;</a>
-                    </li>
                     
                 </ul>
 

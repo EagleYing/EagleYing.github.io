@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HTTPS on EagleYing&#39;s Blog</title>
-    <link>/tags/https/</link>
+    <link>http://EagleYing.github.io/tags/https/</link>
     <description>Recent content in HTTPS on EagleYing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/https/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="http://EagleYing.github.io/tags/https/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nginx(子)于域名设置HTTPS</title>
-      <link>/post/nginx_domain/</link>
+      <link>http://EagleYing.github.io/post/nginx_domain/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/nginx_domain/</guid>
+      <guid>http://EagleYing.github.io/post/nginx_domain/</guid>
       <description>服务器端口配置 如果是子域名，需要在服务器的出方向和入方向都开放对应的端口，主域名入方向 80 端口就可以。 安装Certbot 安装过程参照Certb</description>
     </item>
     
     <item>
       <title>Python Bottle 配置 HTTPS</title>
-      <link>/post/python_bottle_https/</link>
+      <link>http://EagleYing.github.io/post/python_bottle_https/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/python_bottle_https/</guid>
+      <guid>http://EagleYing.github.io/post/python_bottle_https/</guid>
       <description>python的bottle只提供了http的协议，对于需要htpps的情况，需要通过cherrypy等进行转换，转换代码： # copied from bottle. Only changes are to import</description>
     </item>
     
